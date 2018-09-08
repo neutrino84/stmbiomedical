@@ -8,14 +8,13 @@ html
         .container
           .navbar.inverttooltips.navbartooltips.is-dark
             .navbar-brand
-              a.navbar-item.navbar-logo
+              a.navbar-item.navbar-logo(href='/')
                 img(src='/imgs/logo.png')
             .navbar-menu
               .navbar-end
-                a.navbar-item about
-                a.navbar-item services
-                a.navbar-item resources
-                a.navbar-item contact
+                a.navbar-item(href='/about') about
+                a.navbar-item(href='/services') services
+                a.navbar-item(href='/contact') contact
 
       .hero-body
         .container.has-text-centered

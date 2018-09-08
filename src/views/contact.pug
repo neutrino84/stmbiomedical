@@ -1,0 +1,62 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='css/core.css')
+  body
+    section.hero.is-dark.is-shadowless.is-medium.has-bg-img
+      .hero-head
+        .container
+          .navbar.inverttooltips.navbartooltips.is-dark
+            .navbar-brand
+              a.navbar-item.navbar-logo(href='/')
+                img(src='/imgs/logo.png')
+            .navbar-menu
+              .navbar-end
+                a.navbar-item(href='/about') about
+                a.navbar-item(href='/services') services
+                a.navbar-item(href='/contact') contact
+
+    section.wrapper
+      section.section
+        .container
+          div.columns.is-centered
+            .column
+              h2.subtitle Contact Us
+              
+              .field
+                label.label Name
+                .control
+                  input.input(type='text', placeholder='Name')
+
+              .field
+                label.label E-mail
+                .control
+                  input.input(type='text', placeholder='E-mail')
+
+              .field
+                label.label Message
+                .control
+                  textarea.textarea(placeholder='Message')
+
+              .field.is-grouped
+                .control
+                  button.button Submit
+
+      section.hero.benefits.is-dark.is-shadowless.is-clipped
+        .background.is-primary.is-primary-gradient
+        .background.is-dark
+        .container
+          .columns
+            .column
+              h2 Phone Number
+              p 1-415-890-3952
+
+            .column
+              h2 Mailing Address
+              p 548 Market St #21291
+              p San Francisco, CA 94104
+
+    footer.footer
+      .footer-foot.background.is-dark
+        .container
+        .container.has-text-centered &copy; 2018 - STM Biomedical LLC
