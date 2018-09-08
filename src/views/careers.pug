@@ -18,8 +18,8 @@ html
                 a.navbar-item(href='/contact') contact
 
       .hero-foot.background.is-primary.is-primary-gradient
-        .container.has-text-centered
-          .columns.is-centered
+        .container
+          .columns
             .column
               h3.title Consulting
               p.subtitle.is-hidden-mobile Deliver high-quality solutions for our customers.
@@ -34,23 +34,8 @@ html
               p.subtitle.is-hidden-mobile Engage with our customer service needs.
 
     section.wrapper
-
       section.section
         .container
-          div.columns.is-centered
-            .column
-              p.has-text-weight-bold Cultural Values
-              p We live by our four core values: do the right thing, customer success, and employee success.
-            .column
-              p.has-text-weight-bold Office Location
-              p We are headquartered in beautiful downtown San Francisco with remote employees all over the world.
-            .column
-              p.has-text-weight-bold Employee Perks
-              p Fully stocked kitchen, free healthy lunches served daily, and onsite fitness classes.
-
-      section.section
-        .container
-          h2.subtitle Current Openings
           div.columns.is-centered
             .column
               p.has-text-weight-bold Sr. Manager, Partner Solutions
@@ -58,10 +43,15 @@ html
               p.has-text-weight-bold Account Executive
               p.has-text-weight-bold Revenue Analyst
             .column
-              p.has-text-right San Francisco
-              p.has-text-right Remote OK
-              p.has-text-right Remote OK
-              p.has-text-right Remote OK
+
+              p.has-text-weight-bold Cultural Values
+              p We live by our four core values: do the right thing, customer success, and employee success.
+              
+              p.has-text-weight-bold(style='margin-top: 2em') Office Location
+              p We are headquartered in beautiful downtown San Francisco with remote employees all over the world.
+              
+              p.has-text-weight-bold(style='margin-top: 2em') Employee Perks
+              p Fully stocked kitchen, free healthy lunches served daily, and onsite fitness classes.
 
       section.hero.benefits.is-dark.is-shadowless.is-clipped
         .background.is-primary.is-primary-gradient
