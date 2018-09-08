@@ -14,12 +14,29 @@ html
               .navbar-end
                 a.navbar-item(href='/about') about
                 a.navbar-item(href='/services') services
+                a.navbar-item(href='/careers') careers
                 a.navbar-item(href='/contact') contact
+
+    section.hero.is-dark.is-shadowless.is-medium
+      .hero-foot.background.is-primary.is-primary-gradient
+        .container
+          .columns
+            .column
+              h2.subtitle.has-text-weight-bold Phone Number
+              p 1-415-890-3952
+
+            .column
+              h2.subtitle.has-text-weight-bold Mailing Address
+              p 548 Market St #21291
+              p San Francisco, CA 94104
 
     section.wrapper
       section.section
 
         .container
+          img(style='margin-top: 2em', src='/imgs/map.png')
+
+        .container(style='margin-top: 2em')
           div.columns.is-centered
             .column
               h2.subtitle Contact Us
@@ -42,19 +59,6 @@ html
               .field.is-grouped
                 .control
                   button.button Submit
-
-              .container
-
-          .columns
-            .column
-              h2.subtitle Phone Number
-              p 1-415-890-3952
-
-            .column
-              h2.subtitle Mailing Address
-              p 548 Market St #21291
-              p San Francisco, CA 94104
-              img(style='margin-top: 2em', src='/imgs/map.png')
 
       section.hero.benefits.is-dark.is-shadowless.is-clipped
         .background.is-primary.is-primary-gradient

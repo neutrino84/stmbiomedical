@@ -14,25 +14,31 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('/', function(req, res) {
   res.render('index', {
-    title: 'STM BioMedical | Home'
+    title: 'STM Biomedical | Home'
   });
 });
 
 app.get('/about', function(req, res) {
   res.render('about', {
-    title: 'STM BioMedical | About'
+    title: 'STM Biomedical | About'
   });
 });
 
 app.get('/services', function(req, res) {
   res.render('services', {
-    title: 'STM BioMedical | Services'
+    title: 'STM Biomedical | Services'
+  });
+});
+
+app.get('/careers', function(req, res) {
+  res.render('careers', {
+    title: 'STM Biomedical | Careers'
   });
 });
 
 app.get('/contact', function(req, res) {
   res.render('contact', {
-    title: 'STM BioMedical | Contact'
+    title: 'STM Biomedical | Contact'
   });
 });
 
