@@ -1,0 +1,30 @@
+{
+  "private": false,
+  "version": "0.0.1",
+  "name": "stmbiomedical",
+  "license": "unlicensed",
+  "homepage": "http://stmbiomedical.com",
+  "author": "Oliver Dyla",
+  "description": "Turning operational obstacles into operational success",
+  "dependencies": {
+    "pm2": "^3.0.4",
+    "express": "^4.16.3",
+    "pug": "^2.0.3",
+    "compression": "^1.7.3",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "pm2 start app.js"
+  }
+}

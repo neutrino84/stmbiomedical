@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+// import google font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// update colors
+$darker: #171727;
+$turquoise: #44bfd5;
+$pink: #fa7C91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+
+// update global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-light: $beige-light;
+$grey-dark: $brown;
+$grey-darker: $darker;
+$primary: $turquoise;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// update component variables
+// $body-background-color: $beige-lighter;
+
+// import necessary bulma styles
+// @import "~bulma/sass/utilities/_all.sass";
+// @import "~bulma/sass/base/_all.sass";
+// @import "~bulma/sass/elements/button.sass";
+// @import "~bulma/sass/elements/container.sass";
+// @import "~bulma/sass/elements/title.sass";
+// @import "~bulma/sass/components/navbar.sass";
+// @import "~bulma/sass/grid/_all.sass";
+// @import "~bulma/sass/layout/_all.sass";
+
+@import "~bulma/sass/utilities/_all";
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/elements/_all";
+@import "~bulma/sass/components/_all";
+@import "~bulma/sass/grid/_all";
+@import "~bulma/sass/layout/_all";
+
+.hero {
+  .hero-foot {
+    .title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      padding: 0.25em 0;
+      font-size: 1.0rem;
+      font-weight: 400;
+      line-height: 1.25;
+    }
+
+    .container {
+      padding: 3.0em 0;
+    }
+  }
+
+  &.has-bg-img {
+    background: url('/imgs/hero-bg.jpg') center center;
+    background-size: cover;
+  }
+}
+
+section.section {
+  .subtitle {
+    color: $turquoise;
+  }
+}
+
+section.benefits {
+  position: relative;
+  padding: 16rem 1.5rem 6rem 1.5rem;
+  background: none !important;
+
+  h2 {
+  	padding: 1em 0 0 0;
+    font-weight: bold;
+    font-size: 1.0em;
+  }
+
+  p {
+  	font-size: 0.75em;
+  }
+
+  .background.is-primary {
+    left: 100%;
+    -webkit-transform: scaleX(-1) skewY(8deg);
+    transform: scaleX(-1) skewY(8deg);
+    width: 100%;
+    // z-index: -1;
+  }
+
+  .background.is-dark {
+    background: $darker;
+    left: 0%;
+    -webkit-transform: skewY(8deg);
+    transform: skewY(8deg);
+    width: 100%;
+    // z-index: 0;
+  }
+
+  .background {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+  }
+}
+
+footer {
+  &.footer {
+    background: $darker;
+    border-bottom: 3px solid $turquoise;
+  }
+}
+
+.background.is-primary-gradient {
+  background-image: linear-gradient(141deg, #54b2de 0%, #1fc7c4 100%);
+}
+
+.background.is-primary {
+  background-color: $turquoise;
+  color: #fff;
+}
